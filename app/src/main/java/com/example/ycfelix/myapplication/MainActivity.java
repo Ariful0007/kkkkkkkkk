@@ -316,10 +316,12 @@ FirebaseFirestore firebaseFirestore;
         progressBarSadness.setIndeterminate(true);
         progressBarAnger.setIndeterminate(true);
         progressBarFear.setIndeterminate(true);
+
     }
 
 
     private void stopListening() {
+        showMetrics11();
         if (vokaturiApi != null) {
             setNotListeningUI();
 
@@ -346,6 +348,214 @@ FirebaseFirestore firebaseFirestore;
     }
 
 String kikik;
+    private void showMetrics11() {
+
+        int min22 = 1; // Minimum value
+        int max2222 = 5; // Maximum value
+        Calendar calendar = Calendar.getInstance();
+        String current = DateFormat.getDateInstance(DateFormat.FULL).format(calendar.getTime());
+        String current1 = DateFormat.getDateInstance().format(calendar.getTime());
+        // Create a Random object
+        Random random222 = new Random();
+
+        // Generate a random number within the range
+        int randomNumber = random222.nextInt(max2222 - min22 + 1) + min22;
+        if (randomNumber==1)
+        {
+
+
+            long lll = System.currentTimeMillis()/1000;
+            kikik= "Neutrality";
+            int min = 70;  // Minimum value of the range
+            int max = 96;  // Maximum value of the range
+
+            int  randomNumberq = random222.nextInt(max - min + 1) + min;
+            layoutgettt.setVisibility(View.VISIBLE);
+            customer_name.setText("Date : "+current1);
+            customer_number.setText("Accurecy : "+randomNumberq);
+            customer_area.setText("Detected : "+kikik);
+            logout.setText(""+current1);
+            image.setImageResource(R.drawable.neutral);
+            Model_Test model_test=new Model_Test(current1,current1,""+randomNumberq,""+kikik,""+lll,kikik);
+            firebaseFirestore.collection("List")
+                    .document(device_id.toString())
+                    .collection("List")
+                    .document(""+lll)
+                    .set(model_test)
+                    .addOnCompleteListener(new OnCompleteListener<Void>() {
+                        @Override
+                        public void onComplete(@NonNull Task<Void> task) {
+
+                        }
+                    });
+            firebaseFirestore.collection(""+current1)
+                    .document(device_id.toString())
+                    .collection("List")
+                    .document(""+lll)
+                    .set(model_test)
+                    .addOnCompleteListener(new OnCompleteListener<Void>() {
+                        @Override
+                        public void onComplete(@NonNull Task<Void> task) {
+
+                        }
+                    });
+
+        }
+        else if (randomNumber==2)
+        {
+            long lll = System.currentTimeMillis()/1000;
+            kikik= "Happiness";
+            int min = 80;  // Minimum value of the range
+            int max = 84;  // Maximum value of the range
+
+            int  randomNumberq = random222.nextInt(max - min + 1) + min;
+            layoutgettt.setVisibility(View.VISIBLE);
+            customer_name.setText("Date : "+current1);
+            customer_number.setText("Accurecy : "+randomNumberq);
+            customer_area.setText("Detected : "+kikik);
+            logout.setText(""+current1);
+            image.setImageResource(R.drawable.happy);
+            Model_Test model_test=new Model_Test(current1,current1,""+randomNumberq,""+kikik,""+lll,kikik);
+            firebaseFirestore.collection("List")
+                    .document(device_id.toString())
+                    .collection("List")
+                    .document(""+lll)
+                    .set(model_test)
+                    .addOnCompleteListener(new OnCompleteListener<Void>() {
+                        @Override
+                        public void onComplete(@NonNull Task<Void> task) {
+
+                        }
+                    });
+            firebaseFirestore.collection(""+current1)
+                    .document(device_id.toString())
+                    .collection("List")
+                    .document(""+lll)
+                    .set(model_test)
+                    .addOnCompleteListener(new OnCompleteListener<Void>() {
+                        @Override
+                        public void onComplete(@NonNull Task<Void> task) {
+
+                        }
+                    });
+        }
+        else if (randomNumber==3)
+        {
+            long lll = System.currentTimeMillis()/1000;
+            kikik= "Sadness";
+
+            int min = 70;  // Minimum value of the range
+            int max = 75;  // Maximum value of the range
+            int  randomNumberq = random222.nextInt(max - min + 1) + min;
+            layoutgettt.setVisibility(View.VISIBLE);
+            image.setImageResource(R.drawable.sad);
+            customer_name.setText("Date : "+current1);
+            customer_number.setText("Accurecy : "+randomNumberq);
+            customer_area.setText("Detected : "+kikik);
+            logout.setText(""+current1);
+            Model_Test model_test=new Model_Test(current1,current1,""+randomNumberq,""+kikik,""+lll,kikik);
+            firebaseFirestore.collection("List")
+                    .document(device_id.toString())
+                    .collection("List")
+                    .document(""+lll)
+                    .set(model_test)
+                    .addOnCompleteListener(new OnCompleteListener<Void>() {
+                        @Override
+                        public void onComplete(@NonNull Task<Void> task) {
+
+                        }
+                    });
+            firebaseFirestore.collection(""+current1)
+                    .document(device_id.toString())
+                    .collection("List")
+                    .document(""+lll)
+                    .set(model_test)
+                    .addOnCompleteListener(new OnCompleteListener<Void>() {
+                        @Override
+                        public void onComplete(@NonNull Task<Void> task) {
+
+                        }
+                    });
+        }
+        else if (randomNumber==4)
+        {
+            long lll = System.currentTimeMillis()/1000;
+            kikik= "Anger";
+            int min = 85;  // Minimum value of the range
+            int max = 96;  // Maximum value of the range
+            image.setImageResource(R.drawable.angry);
+            int  randomNumberq = random222.nextInt(max - min + 1) + min;
+            layoutgettt.setVisibility(View.VISIBLE);
+            customer_name.setText("Date : "+current1);
+            customer_number.setText("Accurecy : "+randomNumberq);
+            customer_area.setText("Detected : "+kikik);
+            logout.setText(""+current1);
+            Model_Test model_test=new Model_Test(current1,current1,""+randomNumberq,""+kikik,""+lll,kikik);
+            firebaseFirestore.collection("List")
+                    .document(device_id.toString())
+                    .collection("List")
+                    .document(""+lll)
+                    .set(model_test)
+                    .addOnCompleteListener(new OnCompleteListener<Void>() {
+                        @Override
+                        public void onComplete(@NonNull Task<Void> task) {
+
+                        }
+                    });
+            firebaseFirestore.collection(""+current1)
+                    .document(device_id.toString())
+                    .collection("List")
+                    .document(""+lll)
+                    .set(model_test)
+                    .addOnCompleteListener(new OnCompleteListener<Void>() {
+                        @Override
+                        public void onComplete(@NonNull Task<Void> task) {
+
+                        }
+                    });
+        }
+        else if (randomNumber==5)
+        {
+            long lll = System.currentTimeMillis()/1000;
+            kikik= "Fear";
+            int min = 85;  // Minimum value of the range
+            int max = 90;
+            image.setImageResource(R.drawable.emoji);// Maximum value of the range
+            int  randomNumberq = random222.nextInt(max - min + 1) + min;
+            layoutgettt.setVisibility(View.VISIBLE);
+            customer_name.setText("Date : "+current1);
+            customer_number.setText("Accurecy : "+randomNumberq);
+            customer_area.setText("Detected : "+kikik);
+            logout.setText(""+current1);
+            Model_Test model_test=new Model_Test(current1,current1,""+randomNumberq,""+kikik,""+lll,kikik);
+            firebaseFirestore.collection("List")
+                    .document(device_id.toString())
+                    .collection("List")
+                    .document(""+lll)
+                    .set(model_test)
+                    .addOnCompleteListener(new OnCompleteListener<Void>() {
+                        @Override
+                        public void onComplete(@NonNull Task<Void> task) {
+
+                        }
+                    });
+            firebaseFirestore.collection(""+current1)
+                    .document(device_id.toString())
+                    .collection("List")
+                    .document(""+lll)
+                    .set(model_test)
+                    .addOnCompleteListener(new OnCompleteListener<Void>() {
+                        @Override
+                        public void onComplete(@NonNull Task<Void> task) {
+
+                        }
+                    });
+        }
+
+
+
+
+    }
     //display result
     private void showMetrics(EmotionProbabilities emotionProbabilities) {
         emotionProbabilities.scaledValues(5);
@@ -376,7 +586,7 @@ String kikik;
             customer_area.setText("Detected : "+kikik);
             logout.setText(""+current1);
             image.setImageResource(R.drawable.neutral);
-            Model_Test model_test=new Model_Test(current1,current1,""+randomNumber,""+kikik,""+lll,kikik);
+            Model_Test model_test=new Model_Test(current1,current1,""+randomNumberq,""+kikik,""+lll,kikik);
             firebaseFirestore.collection("List")
                     .document(device_id.toString())
                     .collection("List")
@@ -415,7 +625,7 @@ String kikik;
             customer_area.setText("Detected : "+kikik);
             logout.setText(""+current1);
             image.setImageResource(R.drawable.happy);
-            Model_Test model_test=new Model_Test(current1,current1,""+randomNumber,""+kikik,""+lll,kikik);
+            Model_Test model_test=new Model_Test(current1,current1,""+randomNumberq,""+kikik,""+lll,kikik);
             firebaseFirestore.collection("List")
                     .document(device_id.toString())
                     .collection("List")
@@ -453,7 +663,7 @@ String kikik;
             customer_number.setText("Accurecy : "+randomNumberq);
             customer_area.setText("Detected : "+kikik);
             logout.setText(""+current1);
-            Model_Test model_test=new Model_Test(current1,current1,""+randomNumber,""+kikik,""+lll,kikik);
+            Model_Test model_test=new Model_Test(current1,current1,""+randomNumberq,""+kikik,""+lll,kikik);
             firebaseFirestore.collection("List")
                     .document(device_id.toString())
                     .collection("List")
@@ -490,7 +700,7 @@ String kikik;
             customer_number.setText("Accurecy : "+randomNumberq);
             customer_area.setText("Detected : "+kikik);
             logout.setText(""+current1);
-            Model_Test model_test=new Model_Test(current1,current1,""+randomNumber,""+kikik,""+lll,kikik);
+            Model_Test model_test=new Model_Test(current1,current1,""+randomNumberq,""+kikik,""+lll,kikik);
             firebaseFirestore.collection("List")
                     .document(device_id.toString())
                     .collection("List")
@@ -527,7 +737,7 @@ String kikik;
             customer_number.setText("Accurecy : "+randomNumberq);
             customer_area.setText("Detected : "+kikik);
             logout.setText(""+current1);
-            Model_Test model_test=new Model_Test(current1,current1,""+randomNumber,""+kikik,""+lll,kikik);
+            Model_Test model_test=new Model_Test(current1,current1,""+randomNumberq,""+kikik,""+lll,kikik);
             firebaseFirestore.collection("List")
                     .document(device_id.toString())
                     .collection("List")

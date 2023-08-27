@@ -29,7 +29,7 @@ public class HistoryActivity extends AppCompatActivity {
 
     DocumentReference documentReference;
     RecyclerView recyclerView;
-    Income_Adapter getDataAdapter1;
+    Income_Adapter__2 getDataAdapter1;
     List<Model_Test> getList;
     String url;
 
@@ -59,7 +59,7 @@ public class HistoryActivity extends AppCompatActivity {
 
 
         getList = new ArrayList<>();
-        getDataAdapter1 = new Income_Adapter(getList);
+        getDataAdapter1 = new Income_Adapter__2(getList);
         firebaseFirestore = FirebaseFirestore.getInstance();
         documentReference  =  firebaseFirestore.collection("List")
                 .document(device_id.toString())

@@ -29,7 +29,7 @@ public class Income_Adapter extends RecyclerView.Adapter<Income_Adapter.myview> 
 holder.customer_name.setText("Date : "+data.get(position).getDate());
         holder.customer_number.setText("Accurecy : "+data.get(position).getAccurecy());
         holder.customer_area.setText("Detected : "+data.get(position).getPerfullmodel());
-        holder.logout.setText("Date : "+data.get(position).getPerfullmodel());
+        holder.logout.setText(""+data.get(position).getPerfullmodel());
 
     }
 

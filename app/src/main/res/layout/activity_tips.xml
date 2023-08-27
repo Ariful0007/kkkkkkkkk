@@ -55,42 +55,8 @@
                         android:fontFamily="@font/montserrat"
                         android:text="6 ways to take care of your mental health and well-being this World Mental Health Day"
                         android:gravity="center_horizontal" />
-                    <TextView
-                        android:layout_below="@id/image4"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_alignParentLeft="true"
-                        android:layout_centerInParent="false"
-                        android:padding="8dp"
-                        android:layout_marginTop="20dp"
-                        android:layout_marginLeft="0dp"
-                        android:textSize="15dp"
-                        android:textAlignment="center"
-                        android:textColor="@color/black"
-                        android:fontFamily="@font/montserrat"
-                        android:text="
 
-The COVID-19 pandemic has taken a toll on people’s mental health. People from all walks of life have experienced stress throughout the pandemic – from frontline workers who are overwhelmed with work, young people who can’t go to school, family members who are separated from each other, those impacted by COVID-19 infection or loss of loved ones, or people with pre-existing mental health conditions who face difficulties in accessing mental health services during lockdowns."
-                        android:gravity="center_horizontal" />
-                    <TextView
-                        android:layout_below="@id/image4"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_alignParentLeft="true"
-                        android:layout_centerInParent="false"
-                        android:padding="8dp"
-                        android:layout_marginTop="20dp"
-                        android:layout_marginLeft="0dp"
-                        android:textSize="15dp"
-                        android:textAlignment="center"
-                        android:textColor="@color/black"
-                        android:fontFamily="@font/montserrat"
-                        android:text="
 
-The COVID-19 pandemic has taken a toll on people’s mental health. People from all walks of life have experienced stress throughout the pandemic – from frontline workers who are overwhelmed with work, young people who can’t go to school, family members who are separated from each other, those impacted by COVID-19 infection or loss of loved ones, or people with pre-existing mental health conditions who face difficulties in accessing mental health services during lockdowns.
-
-It is understandable to feel scared, anxious or helpless during this unprecedented time. But whatever situation you are in and wherever you are in the Pacific, you have the power to look after your mental health and well-being. As we celebrate World Mental Health Day this 10 October, here are 6 things you can do to help you cope, not only with the COVID-19 pandemic, but any event that may cause stress"
-                        android:gravity="center_horizontal" />
                     //1
                     <TextView
                         android:layout_below="@id/image4"
